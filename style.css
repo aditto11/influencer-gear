@@ -1,0 +1,278 @@
+/* Work sans font form google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* sheared styles */
+* {
+    font-family: Poppins;
+}
+
+.common-text {
+    color: #3A3A3A;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* header style */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 200px;
+}
+
+nav ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.header-title1 {
+    color: #3A3A3A;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.header-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+    margin: 50px 200px;
+}
+
+.header-title2 {
+    color: #3A3A3A;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+img {
+    background-image: url(./images/Circle\ design.svg);
+}
+
+.btn1 {
+    padding: 10px 25px;
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 0;
+}
+
+/* header icons */
+
+.header-icon {
+    display: flex;
+    margin: 80px 200px;
+}
+
+.header-icon img {
+    margin-left: 100px;
+}
+
+.collection-title {
+    color: #3A3A3A;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.popular-collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+.card {
+    border: 0;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    width: 329px;
+    height: 476px;
+    margin: 40px;
+    padding: 20px;
+}
+
+.card img {
+    width: 330px;
+    height: 256px;
+}
+
+.collection-name {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.card p {
+    color: #787885;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card-p {
+    color: rgba(224, 44, 109, 0.87);
+    padding-left: 40px;
+    font-size: 1.5rem;
+}
+
+/* last section style form main */
+
+.last-banner {
+    display: flex;
+    margin: 100px 200px;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.last-banner-title {
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.last-description {
+    width: 501px;
+    height: 88px;
+    flex-shrink: 0;
+}
+
+.last-btn {
+    background: #E02C6D;
+    padding: 20px 44px;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 0;
+}
+
+/* footer style */
+
+.footer {
+    background: #0A0826;
+    text-align: center;
+    padding: 100px 500px;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.foot {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.footer-icons{
+    display: flex;
+    margin-left: 250px;
+}
+
+@media screen and (max-width:576px) {
+    .nav {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .header-banner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .header-icon {
+        flex-direction: column;
+        width: 200px;
+        position: relative;
+        right: 150px;
+    }
+
+    .header-icon img {
+        margin-bottom: 30px;
+    }
+
+    .popular-collection {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px;
+    }
+
+    .card-p {
+        margin-left: 280px;
+        font-size: 1.5rem;
+    }
+
+    .last-banner {
+        flex-direction: column-reverse;
+        margin: 10px;
+        text-align: center;
+        padding-left: 50px;
+        margin-bottom: 30px;
+    }
+
+    .last-description {
+        width: 331px;
+        height: 188px;
+        flex-shrink: 0;
+    }
+
+    .footer{
+        padding: 20px 100px;
+        width: 80%;
+    }
+    .footer-icons{
+        margin: 10px;
+    }
+}
+
+
+/* for medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .nav {
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .header-banner {
+        margin: 10px;
+    }
+
+    .header-icon {
+        /* margin: 10px; */
+        flex-direction: column;
+        width: 300px;
+        padding-top: 30px;
+    }
+
+    .header-icon img {
+        padding: 20px;
+    }
+
+    .popular-collection {
+        grid-template-columns: repeat(2, .5fr);
+        margin: 10px;
+    }
+
+    .popular-collection .card-p {
+        font-size: 30px;
+        padding-left: 200px;
+        padding-top: 300px;
+    }
+
+    .last-banner {
+        flex-direction: column;
+    }
+
+    .footer{
+        padding: 20px 50px;
+        width: 100%;
+    }
+
+}
